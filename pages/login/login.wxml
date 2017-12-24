@@ -1,0 +1,38 @@
+<view class="page">
+  <view class="page__hd">
+    <!-- <view class="section section_gap" wx:for-item="item">
+      <view class="section__title">{{item.text}}</view>
+      <view class="section__ctn">
+        <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="{{item.mode}}" src="{{src}}"></image>
+      </view>
+    </view> -->
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <!-- 错误提示 -->
+    <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
+    <!-- 账号信息 -->
+    <!-- <view class="weui-cells__title">登陆</view> -->
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input name="username" class="weui-input" type='text' placeholder="账号" auto-focus/>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+            <input name="password" class="weui-input" type='password' placeholder="密码" />
+          </view>
+        </view>
+      </view>
+      <!-- 操作按钮 -->
+      <view class="weui-btn-area">
+        <button formType="submit" class="weui-btn" type="primary">登陆</button>
+        <button class="weui-btn" type="default">找回密码</button> 
+      </view>
+      <!-- <view class="weui-cell">
+         <text>找回密码</text> 
+      </view> -->
+    </form>
+  </view>
+</view>

@@ -1,12 +1,35 @@
 {
-  "pages": [
-    "pages/index/index",
+  "pages":[
+    "pages/login/login",
+    "pages/checkin/checkin",
     "pages/logs/logs"
   ],
-  "window": {
-    "backgroundTextStyle": "light",
+  "window":{
+    "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTitleText": "Uni CheckIn",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/event/event",
+        "text": "活动",
+        "iconPath": "images/event.png",
+        "selectedIconPath": "images/event.png"
+      },
+      {
+        "pagePath": "pages/checkin/checkin",
+        "text": "签到",
+        "iconPath": "images/checkin.png",
+        "selectedIconPath": "images/checkin.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "images/config.png",
+        "selectedIconPath": "images/config.png"
+      }
+    ]
   }
 }
